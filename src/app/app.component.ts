@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TimerComponent } from './timer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<app-timer></app-timer>`,
+  styles: [],
+  imports: [TimerComponent]
 })
-export class AppComponent {
-  title = 'timer';
-}
+export class AppComponent { }

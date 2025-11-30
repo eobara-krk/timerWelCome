@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background: transparent !important;
+  font-family: 'Lato', sans-serif;
+  overflow: visible;
+}
+
+
+/* Ustawienie głównego kontenera aplikacji na rozmiar timera */
+#app-root {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  z-index: 1000;
+}
+
