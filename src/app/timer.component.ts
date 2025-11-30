@@ -13,8 +13,8 @@ export class TimerComponent implements OnInit {
 
   private START_HOUR = 9;
   private START_MIN = 15;
-  private END_HOUR = 9;
-  private END_MIN = 30;
+  private END_HOUR = 10;
+  private END_MIN = 8
 
   ngOnInit() {
     this.updateTimer();
@@ -54,8 +54,8 @@ export class TimerComponent implements OnInit {
     return `${String(min).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
   }
 
-  private playAlarm() {
-    const audio = new Audio('assets/gong.ogg');
+  playAlarm() {
+    const audio = new Audio('dzwon.mp3');
     audio.play();
   }
 }
